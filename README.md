@@ -1,6 +1,6 @@
 ## 简单的 IoC 实现
 
-###什么是 IoC
+### 什么是 IoC
 
 IoC 是 Inversion of Control 的缩写，我们称之控制反转。控制反转是面向对象编程中的一种设计原则，可以用来降低代码之间的耦合度。其中最常见的方式叫依赖注入 (Dependency Injection, 简称 DI)。 
 
@@ -8,13 +8,13 @@ IoC 是 Inversion of Control 的缩写，我们称之控制反转。控制反转
 
 在引入 IoC 之前，类与类之间的的引用通常在代码中通过 new 操作符来实例化一个类对象，比如需要在 Class A中调用 Class B 的方法，则会在 Class A 中 new ClassB()，获取 Class B 的实例后，再调用相关方法。当我们的项目越来越大，类就会越来越多，类与类之间的引用就会成指数级的增长。
 
-![006tNc79ly1fnd1qwnp8qj30aa06ot8t](/Users/yaoyufan/Downloads/006tNc79ly1fnd1qwnp8qj30aa06ot8t.jpg)
+![006tNc79ly1fnd1qwnp8qj30aa06ot8t](./img/006tNc79ly1fnd1qwnp8qj30aa06ot8t.jpg)
 
 引入 IoC 框架后，类之间的关系都由 IoC 框架负责维护类，同时将类注入到需要的类中。也就是类的使用者只负责使用，而不负责维护。把专业的事情交给专业的框架来完成。大大的减少开发的复杂度。
 
-![006tKfTcly1fnd1yq1vzpj30aa06v0sr](/Users/yaoyufan/Downloads/006tKfTcly1fnd1yq1vzpj30aa06v0sr.jpg)
+![006tKfTcly1fnd1yq1vzpj30aa06v0sr](./img/006tKfTcly1fnd1yq1vzpj30aa06v0sr.jpg)
 
-用一个类比来理解这个问题。IoC 框架就是我们生活中的房屋中介，首先中介会收集市场上的房源，分别和各个房源的房东建立联系。当我们需要租房的时候，并不需要我们四处寻找各类租房信息。我们直接找房屋中介，中介就会根据你的需求提供相应的房屋信息。大大提升了租房的效率，减少了你与各类房东之间的沟通次数。
+用一个类比来理解这个问题。IoC 框架就是我们生活中的房屋中介，首先中介会收集市场上的房源，分别和各个房源的房东建立联系。当我们需要租房的时候，并不需要我们四处寻找各类租房信息。我们直接找房屋中介，中介就会根据你的需求提供相应的房屋信息。大大提升了租房的效率，减少了你与各类房东之间的沟通次数。
 
 ### Spring IoC 的基本思想
 
@@ -195,7 +195,7 @@ private void loadFile() {
 
 #### 配置文件
 
-#####applicationBean.yaml
+##### applicationBean.yaml
 
 ```yaml
 - !!com.maycur.ioc.bean.BeanDefinition
@@ -293,7 +293,7 @@ public static void main(String args[]) {
 }
 ```
 
-###调用分析
+### 调用分析
 
 1. 初始化 ApplicationContext 对象
 
