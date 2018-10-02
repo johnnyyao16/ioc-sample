@@ -1,0 +1,15 @@
+- !!com.maycur.ioc.bean.BeanDefinition
+  beanName: serviceA
+  className: com.maycur.ioc.maintest.service.impl.ServiceAImpl
+  interfaceName: com.maycur.ioc.maintest.service.ServiceA
+  constructorArgs:
+- !!com.maycur.ioc.bean.BeanDefinition
+  beanName: serviceB
+  className: com.maycur.ioc.maintest.service.impl.ServiceBImpl
+  interfaceName: com.maycur.ioc.maintest.service.ServiceB
+  constructorArgs:
+- !!com.maycur.ioc.bean.BeanDefinition
+  beanName: serviceC
+  className: com.maycur.ioc.maintest.service.impl.ServiceCImpl
+  interfaceName: com.maycur.ioc.maintest.service.ServiceC
+  constructorArgs:
